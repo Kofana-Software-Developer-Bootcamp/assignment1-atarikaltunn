@@ -5,47 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kodluyoruz Bootcamp Başvuru</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form action="" method="get" class="bootcampForm">
-        <!-- WELCOME TO KOFANA SOFTWARE DEVELOPER BOOTCAMP -->
-        <div class="form">
-            <label for="name">İsim Soyisim:</label> <br>
-            <input type="text" name="name" id="name" required>
-        </div>
-        <div class="form">
-            <label for="email">email:</label> <br>
-            <input type="email" name="email" id="email" required>
-        </div>
-        <div class="form">
-            <label for="age">Yaş:</label> <br>
-            <input type="age" name="age" id="age" required>
-        </div>
-        <div class="form">
-            <label for="university">Üniversite:</label> <br>
-            <input type="university" name="university" id="university" required>
-        </div>
-        <div class="form">
-            <label for="department">Bölüm:</label> <br>
-            <input type="department" name="department" id="department" required>
-        </div>
-        <div class="form">
-            <label for="class">Sınıf:</label> <br>
-            <input type="class" name="class" id="class" required>
-        </div>
-        <div class="form">
-            <label for="city">Bulunduğunuz Şehir:</label> <br>
-            <input type="city" name="city" id="city" required>
-        </div>
-        <div class="form">
-            <label for="hobby">Yapmaktan Hoşlandoğınız Şeyler:</label> <br>
-            <input type="hobby" name="hobby" id="hobby" required>
-        </div>
-        <div class="form">
-            <input type="submit" value="Basvur">
-        </div>
-    </form>
+    <div class = "container">
+        <h1>Kofana Software & Patika.dev <br>
+            Developer Bootcamp Başvuru Formu </h1>
+        <form action="" method="get" class="bootcampForm">
+            <!--  -->
+            <div class="form">
+                <label for="name">İsim Soyisim:</label> <br>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form">
+                <label for="email">email:</label> <br>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form">
+                <label for="age">Yaş:</label> <br>
+                <input type="number" name="age" id="age" required>
+            </div>
+            <div class="form">
+                <label for="university">Üniversite:</label> <br>
+                <input type="university" name="university" id="university" required>
+            </div>
+            <div class="form">
+                <label for="department">Bölüm:</label> <br>
+                <input type="text" name="department" id="department" required>
+            </div>
+
+            <label for="grade-choice">Sınıf:</label> <br>
+            <input list="grade-list" id="grade-choice" name="grade-choice" />
+            <datalist id="grade-list">
+                <option value="İngilizce Hazırlık">
+                <option value="1. Sınıf">
+                <option value="2. Sınıf">
+                <option value="3. Sınıf">
+                <option value="4. Sınıf">
+                <option value="Mezun">
+            </datalist>
+
+            <div class="form">
+                <label for="city">Bulunduğunuz Şehir:</label> <br>
+                <input type="text" name="city" id="city" required>
+            </div>
+            <fieldset>
+                <legend>Daha önce Kodluyoruz veya Patika.dev Bootcamp'ine katıldınız mı?</legend>
+
+                <input type="radio" id="kodluyoruz" name="bootcamp">
+                <label for="kodluyoruz">Kodluyoruz Bootcamp'ine katıldım.</label><br />
+
+                <input type="radio" id="patika" name="bootcamp">
+                <label for="patika">Patika.dev Bootcamp'ine katıldım.</label><br />
+
+                <input type="radio" id="both" name="bootcamp">
+                <label for="both">Kodluyoruz ve Patika.dev Bootcamp'lerine katıldım.</label> <br />
+
+                <input type="radio" id="none" name="bootcamp">
+                <label for="none">Daha önce Bootcamp'e katılmadım.</label>
+            </fieldset>
+            <div class="form">
+                <label for="hobby">Yapmaktan Hoşlandığınız Şeyler:</label> <br>
+                <input type="textarea" name="hobby" id="hobby" required>
+            </div>
+            <button onclick="basvuru()" id="submitBtn">Başvur</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
