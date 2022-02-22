@@ -15,27 +15,27 @@
         <form action="" method="get" class="bootcampForm">
             <!--  -->
             <div class="form">
-                <label for="name">İsim Soyisim:</label> <br>
+                <label class="question"  for="name">İsim Soyisim:</label> <br>
                 <input type="text" name="name" id="name" required>
             </div>
             <div class="form">
-                <label for="email">email:</label> <br>
+                <label class="question" for="email">E-mail:</label> <br>
                 <input type="email" name="email" id="email" required>
             </div>
             <div class="form">
-                <label for="age">Yaş:</label> <br>
+                <label class="question" for="age">Yaş:</label> <br>
                 <input type="number" name="age" id="age" required>
             </div>
             <div class="form">
-                <label for="university">Üniversite:</label> <br>
-                <input type="university" name="university" id="university" required>
+                <label class="question" for="university">Üniversite:</label> <br>
+                <input type="text" name="university" id="university" required>
             </div>
             <div class="form">
-                <label for="department">Bölüm:</label> <br>
+                <label class="question" for="department">Bölüm:</label> <br>
                 <input type="text" name="department" id="department" required>
             </div>
 
-            <label for="grade-choice">Sınıf:</label> <br>
+            <label class="question" for="grade-choice">Sınıf:</label> <br>
             <input list="grade-list" id="grade-choice" name="grade-choice" />
             <datalist id="grade-list">
                 <option value="İngilizce Hazırlık">
@@ -47,31 +47,32 @@
             </datalist>
 
             <div class="form">
-                <label for="city">Bulunduğunuz Şehir:</label> <br>
+                <label class="question" for="city">Bulunduğunuz Şehir:</label> <br>
                 <input type="text" name="city" id="city" required>
-            </div>
+            </div> <br>
             <fieldset>
-                <legend>Daha önce Kodluyoruz veya Patika.dev Bootcamp'ine katıldınız mı?</legend>
+                <legend>Daha önce Kodluyoruz veya Patika.dev Bootcamp'ine katıldınız mı?</legend> <br>
 
                 <input type="radio" id="kodluyoruz" name="bootcamp">
-                <label for="kodluyoruz">Kodluyoruz Bootcamp'ine katıldım.</label><br />
+                <label class="answer"  for="kodluyoruz">Kodluyoruz Bootcamp'ine katıldım.</label><br />
 
                 <input type="radio" id="patika" name="bootcamp">
-                <label for="patika">Patika.dev Bootcamp'ine katıldım.</label><br />
+                <label class="answer" for="patika">Patika.dev Bootcamp'ine katıldım.</label><br />
 
                 <input type="radio" id="both" name="bootcamp">
-                <label for="both">Kodluyoruz ve Patika.dev Bootcamp'lerine katıldım.</label> <br />
+                <label class="answer" for="both">Kodluyoruz ve Patika.dev Bootcamp'lerine katıldım.</label> <br />
 
                 <input type="radio" id="none" name="bootcamp">
-                <label for="none">Daha önce Bootcamp'e katılmadım.</label>
+                <label class="answer" for="none">Daha önce Bootcamp'e katılmadım.</label> 
             </fieldset>
-            <div class="form">
-                <label for="hobby">Yapmaktan Hoşlandığınız Şeyler:</label> <br>
+            <div class="form"> <br>
+                <label class="question" for="hobby">Hobileriniz:</label> <br>
                 <input type="textarea" name="hobby" id="hobby" required>
             </div>
-            <button onclick="basvuru()" id="submitBtn">Başvur</button>
         </form>
     </div>
+    <button onclick="basvuru()" id="submitBtn">Başvur</button>
+
     <script src="script.js"></script>
 </body>
 
