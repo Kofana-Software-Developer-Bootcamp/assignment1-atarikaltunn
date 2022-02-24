@@ -9,7 +9,7 @@ legend {
     margin: .4rem;
 } */
 
-.bootcampForm {
+#bootcampForm {
     border-top: 1px solid;
 
 }
@@ -36,7 +36,7 @@ body {
     font: 1.3rem 'Fira Sans', sans-serif;
 }
 
-button{
+/* #submitBtn{
     text-align: center;
     margin-left:  48.5%;
-}
+} */

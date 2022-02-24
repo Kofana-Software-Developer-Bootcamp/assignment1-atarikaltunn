@@ -9,13 +9,14 @@
 </head>
 
 <body>
-    <div class = "container">
+    <div class="container">
         <h1>Kofana Software & Patika.dev <br>
             Developer Bootcamp Başvuru Formu </h1>
-        <form action="" method="get" class="bootcampForm">
-            <!--  -->
+        <form id="bootcampForm" method="post" action="">
+
+
             <div class="form">
-                <label class="question"  for="name">İsim Soyisim:</label> <br>
+                <label class="question" for="name">İsim Soyisim:</label> <br>
                 <input type="text" name="name" id="name" required>
             </div>
             <div class="form">
@@ -53,25 +54,27 @@
             <fieldset>
                 <legend>Daha önce Kodluyoruz veya Patika.dev Bootcamp'ine katıldınız mı?</legend> <br>
 
-                <input type="radio" id="kodluyoruz" name="bootcamp">
-                <label class="answer"  for="kodluyoruz">Kodluyoruz Bootcamp'ine katıldım.</label><br />
+                <input type="radio" id="bootcamp" name="kodluyoruz" value="kodluyoruz">
+                <label class="answer" for="kodluyoruz">Kodluyoruz Bootcamp'ine katıldım.</label><br />
 
-                <input type="radio" id="patika" name="bootcamp">
+                <input type="radio" id="bootcamp" name="patika" value="patika">
                 <label class="answer" for="patika">Patika.dev Bootcamp'ine katıldım.</label><br />
 
-                <input type="radio" id="both" name="bootcamp">
+                <input type="radio" id="bootcamp" name="both" value="both">
                 <label class="answer" for="both">Kodluyoruz ve Patika.dev Bootcamp'lerine katıldım.</label> <br />
 
-                <input type="radio" id="none" name="bootcamp">
-                <label class="answer" for="none">Daha önce Bootcamp'e katılmadım.</label> 
+                <input type="radio" id="bootcamp" name="none" value="none">
+                <label class="answer" for="none">Daha önce Bootcamp'e katılmadım.</label>
             </fieldset>
             <div class="form"> <br>
                 <label class="question" for="hobby">Hobileriniz:</label> <br>
                 <input type="textarea" name="hobby" id="hobby" required>
             </div>
+            <input type="button" id="submitBtn" onclick=onSubmit()>
+
         </form>
+        <!-- <button type="submit" id="submitBtn" onclick=onSubmit()>Submit</button> -->
     </div>
-    <button onclick="basvuru()" id="submitBtn">Başvur</button>
 
     <script src="script.js"></script>
 </body>
