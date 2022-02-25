@@ -9,3 +9,9 @@ Form elementleri kullanılarak Bootcamp katılım formu oluşturulmaya çalış�
 ## 2- JavaScript kısmında verilerin yönetimi ve yönlendirilmesi
 
 Başvurular bir javascript objesi ile arrayde depolanmaya çalışılmıştır.
+
+
+## Geliştirilebilir Özellikler:
+
+-Server ile etkileşim eklenebilir.
+-Form içeriği detaylandırılabilir.
