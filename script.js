@@ -38,6 +38,17 @@ function onSubmit() {
   // console.log(basvuru.isim);
   arr.push(basvuru);
   console.log(basvuru.isim + ", " + basvuru.bootcamp_katilim);
+  basvuru = {
+    isim: "",
+    email: "",
+    yas: "",
+    universite: "",
+    bolum: "",
+    sinif: "",
+    sehir: "",
+    bootcamp_katilim: "",
+    hobiler: ""
+};
   // console.log(arr);
 }
 // console.log(3);
