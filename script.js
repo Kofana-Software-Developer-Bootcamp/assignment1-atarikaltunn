@@ -22,18 +22,18 @@ var basvuru = {
 function onSubmit() {
   // console.log(2);
   alert("submitted");
-  // basvuru.isim = document.getElementById("name").value;
-  // basvuru.email = document.getElementById("email").value;
-  // basvuru.yas = document.getElementById("age").value;
-  // basvuru.universite = document.getElementById("university").value;
-  // basvuru.bolum = document.getElementById("department").value;
-  // basvuru.sinif = document.getElementById("grade-choice").value;
-  // basvuru.sehir = document.getElementById("city").value;
-  basvuru.bootcamp_katilim = document.getElementById("bootcamp").value;
-  // basvuru.hobiler = document.getElementById("hobby").value;
+  basvuru.isim = document.getElementById("name").value;
+  basvuru.email = document.getElementById("email").value;
+  basvuru.yas = document.getElementById("age").value;
+  basvuru.universite = document.getElementById("university").value;
+  basvuru.bolum = document.getElementById("department").value;
+  basvuru.sinif = document.getElementById("grade-choice").value;
+  basvuru.sehir = document.getElementById("city").value;
+  // basvuru.bootcamp_katilim = document.getElementById("bootcamp").value;
+  basvuru.hobiler = document.getElementById("hobby").value;
   // console.log(basvuru.isim);
-  // arr.push(basvuru);
+  arr.push(basvuru);
   // console.log(document.getElementById("bootcamp"));
-
+  console.log(arr);
 }
 // console.log(3);
